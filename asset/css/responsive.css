@@ -1,0 +1,378 @@
+@media (max-width:575px) {
+    .top-contact {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .burger {
+        width: 100%;
+        background-color: #4c4c4c;
+        padding: 5px;
+        position: relative;
+
+    }
+
+    .burger>a {
+        background-color: black;
+        padding: 4px 5px;
+        float: right;
+        border-radius: 4px;
+    }
+
+    .burger-menu {
+        display: block;
+        color: var(--text-color);
+        margin-right: 5px;
+    }
+
+    .burger-line>span {
+        width: 15px;
+        height: 3px;
+        display: inline-block;
+        background-color: var(--text-color);
+    }
+
+    .menu {
+        background-color: #4c4c4c;
+        width: 100%;
+        display: none;
+        visibility: hidden;
+        position: absolute;
+        top: 160%;
+        clear: both;
+    }
+
+    .burger>a:focus+.menu {
+        display: block;
+        visibility: visible;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .submenu {
+        background-color: #4c4c4c;
+    }
+
+    .menu li:focus>.submenu {
+        display: block;
+        visibility: visible;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .slogan {
+        margin-top: 100px;
+    }
+
+    .slogan a {
+        margin: 5px 0;
+    }
+
+    .service-box {
+        display: flex;
+        flex-direction: column;
+        transform: scale(0.7);
+        margin: 20px auto;
+    }
+
+    .service h2 {
+        margin: 0 auto;
+        transform: scale(0.7);
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-pic {
+        width: 100% !important;
+    }
+
+    .about-text {
+        width: 100% !important;
+        transform: scale(0.7);
+    }
+
+    .counter {
+        margin: 0 20px !important;
+        transform: scale(0.8);
+    }
+
+    .counter-area h3 {
+        font-size: 16px;
+    }
+
+    .counter-area h3 span {
+        font-size: 20px;
+    }
+
+    .left,
+    .middle,
+    .right {
+        margin: 0 30px;
+    }
+
+    .left,
+    .middle,
+    .right>span {
+        font-size: 12px;
+    }
+
+    .section-title h3 {
+        font-size: 26px;
+        margin-top: 30px;
+    }
+
+    .section-title p {
+        font-size: 14px;
+    }
+
+    .main-galery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flower .hover-galery h3 {
+        padding-top: 100px;
+    }
+
+    .info-bar {
+        flex-direction: column;
+    }
+
+    .box-info {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .financial-solution-area {
+        padding: 0;
+    }
+
+    .financial-area {
+        flex-direction: column;
+    }
+
+    .financial-text {
+        width: 100%;
+        transform: scale(0.8);
+    }
+
+    .financial-pic {
+        width: 100%;
+    }
+
+    .owner {
+        margin-bottom: 50px;
+    }
+
+    .project {
+        padding: 30px 0;
+    }
+
+    .project-box {
+        transform: scale(0.7);
+    }
+
+    .footer-top {
+        padding: 30px 0;
+    }
+
+    .footer-box {
+        flex-direction: column;
+    }
+}
+
+@media (min-width:576px) and (max-width:766px) {
+    .container {
+        max-width: 540px
+    }
+
+    .top-contact {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .burger {
+        width: 100%;
+        background-color: #4c4c4c;
+        padding: 5px;
+        position: relative;
+
+    }
+
+    .burger>a {
+        background-color: black;
+        padding: 4px 5px;
+        float: right;
+        border-radius: 4px;
+    }
+
+    .burger-menu {
+        display: block;
+        color: var(--text-color);
+        margin-right: 5px;
+    }
+
+    .burger-line>span {
+        width: 15px;
+        height: 3px;
+        display: inline-block;
+        background-color: var(--text-color);
+    }
+
+    .menu {
+        background-color: #4c4c4c;
+        width: 100%;
+        display: none;
+        visibility: hidden;
+        position: absolute;
+        top: 160%;
+        clear: both;
+    }
+
+    .burger>a:focus+.menu {
+        display: block;
+        visibility: visible;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .submenu {
+        background-color: #4c4c4c;
+    }
+
+    .menu li:focus>.submenu {
+        display: block;
+        visibility: visible;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .slogan {
+        margin-top: 100px;
+    }
+
+    .slogan a {
+        margin: 5px 0;
+    }
+
+    .service-box {
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+    }
+
+    .problem {
+        position: absolute;
+        left: 130px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-pic {
+        width: 100% !important;
+    }
+
+    .about-text {
+        width: 100% !important;
+        transform: scale(0.9);
+
+    }
+
+    .counter {
+        margin: 0 20px !important;
+        transform: scale(0.9);
+    }
+
+    .counter-area h3 {
+        font-size: 18px;
+    }
+
+    .counter-area h3 span {
+        font-size: 22px;
+    }
+
+    .section-title h3 {
+        font-size: 26px;
+        margin-top: 30px;
+    }
+
+    .section-title p {
+        font-size: 14px;
+    }
+
+    .info-bar {
+        flex-direction: column;
+    }
+
+    .box-info {
+        width: 70%;
+        margin-left: 70px;
+    }
+
+    .financial-solution-area {
+        padding: 0;
+    }
+
+    .financial-area {
+        flex-direction: column;
+    }
+
+    .financial-text {
+        width: 100%;
+        transform: scale(0.9);
+    }
+
+    .financial-pic {
+        width: 100%;
+    }
+
+    .footer-box {
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width:768px) {
+    .container {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px
+    }
+}
