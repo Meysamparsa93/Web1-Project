@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
 
+/* Global */
 *,
 ::after,
 ::before {
@@ -33,6 +34,7 @@ a {
     margin-left: auto;
 }
 
+/* Header */
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.555)), url('../images/banner.png');
     background-size: cover;
@@ -74,6 +76,7 @@ nav>div {
     border-bottom: 1px solid #4B4E50;
 }
 
+/* Menu */
 .burger-menu {
     display: none;
 }
@@ -99,6 +102,7 @@ nav .menu li:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
     opacity: 0;
     visibility: hidden;
+    transition-duration: 0s;
 }
 
 .submenu li {
@@ -117,6 +121,7 @@ nav .menu li:hover>.submenu {
     opacity: 1;
     visibility: visible;
     top: 150%;
+    transition-duration: 2s;
 }
 
 .botton a {
@@ -138,6 +143,7 @@ nav .menu li:hover>.submenu {
     font-size: 20px;
 }
 
+/* Slogan */
 .slogan {
     margin-top: 180px;
 }
@@ -292,6 +298,7 @@ nav .menu li:hover>.submenu {
     text-align: center;
 }
 
+/* About-div */
 .about .about-pic {
     width: 50%;
     height: 488px;
@@ -412,6 +419,7 @@ nav .menu li:hover>.submenu {
     text-align: center;
 }
 
+/* Galery-div */
 .galery-area .main-galery {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px 30px;
@@ -497,6 +505,7 @@ nav .menu li:hover>.submenu {
     color: var(--text-color) !important;
 }
 
+/* Info-div */
 .info {
     background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.37)), url(../images/about_bg.webp);
     padding: 145px 0 115px 0;
@@ -616,6 +625,7 @@ nav .menu li:hover>.submenu {
     text-align: center;
 }
 
+/* Project-div */
 .project {
     background: var(--main-color);
     padding: 150px 0;
@@ -659,6 +669,7 @@ nav .menu li:hover>.submenu {
     color: var(--main-color) !important;
 }
 
+/* Footer */
 .footer-top {
     padding-top: 145px;
     padding-bottom: 129px;

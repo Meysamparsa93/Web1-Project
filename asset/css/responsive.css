@@ -17,7 +17,6 @@
         background-color: #4c4c4c;
         padding: 5px;
         position: relative;
-
     }
 
     .burger>a {
@@ -48,11 +47,13 @@
         position: absolute;
         top: 160%;
         clear: both;
+        transition: 2s;
     }
 
     .burger>a:focus+.menu {
         display: block;
         visibility: visible;
+        transition: 2s;
     }
 
     .menu ul {
@@ -359,9 +360,113 @@
 
 }
 
-@media (min-width:768px) {
+@media (min-width:767px) and (max-width:991px) {
     .container {
         max-width: 720px
+    }
+
+    .top-contact {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .burger {
+        width: 100%;
+        background-color: #4c4c4c;
+        padding: 5px;
+        position: relative;
+
+    }
+
+    .burger>a {
+        background-color: black;
+        padding: 4px 5px;
+        float: right;
+        border-radius: 4px;
+    }
+
+    .burger-menu {
+        display: block;
+        color: var(--text-color);
+        margin-right: 5px;
+    }
+
+    .burger-line>span {
+        width: 15px;
+        height: 3px;
+        display: inline-block;
+        background-color: var(--text-color);
+    }
+
+    .menu {
+        background-color: #4c4c4c;
+        width: 100%;
+        display: none;
+        visibility: hidden;
+        position: absolute;
+        top: 160%;
+        clear: both;
+    }
+
+    .burger>a:focus+.menu {
+        display: block;
+        visibility: visible;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .submenu {
+        background-color: #4c4c4c;
+    }
+
+    .menu li:focus>.submenu {
+        display: block;
+        visibility: visible;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .about-pic {
+        height: 505px !important;
+    }
+
+    .about-text {
+        height: 505px !important;
+        transform: scale(0.8);
+
+    }
+
+    .financial-text {
+        transform: scale(0.8);
+        padding-top: 0;
+    }
+
+    
+    .financial-text h3 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    
+    .financial-text p {
+        font-size: 14px;
+    }
+
+    .footer-box {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
     }
 }
 
